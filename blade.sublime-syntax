@@ -12,12 +12,12 @@ contexts:
           pop: true
       with_prototype:
 
-        - match: '{{--'
+        - match: '{{%'
           captures:
             0: punctuation.definition.comment.begin.blade
           push:
             - meta_scope: comment.block.html.blade
-            - match: '--}}'
+            - match: '%}}'
               scope: punctuation.definition.comment.end.blade
               pop: true
             - match: "--"
